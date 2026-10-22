@@ -1,11 +1,13 @@
 ## Weekly update: Oct 19–23
 
-**TL;DR:** Auth migration on track for Nov 3 cutover. Handled one billing incident.
+**Wins**
+- auth-migration: unblocked Nov 3 cutover by fixing the token refresh race
+- on-call: restored billing webhooks in 25 min with no lost payments
 
 **Done**
-- auth-migration: fixed token refresh race in session service (unblocks Nov 3 cutover)
+- auth-migration: fixed token refresh race in session service
 - auth-migration: load test passed at 2× peak
-- on-call: triaged billing webhook 500s (restored in 25 min, no lost payments)
+- on-call: triaged billing webhook 500s
 
 **In progress**
 - auth-migration: write prod rollout plan (open 8 days)

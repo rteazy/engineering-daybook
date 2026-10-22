@@ -5,7 +5,7 @@ Definition of an agent-friendly [engineering daybook.](https://www.oreilly.com/l
 
 - Frontmatter: `date: YYYY-MM-DD`.
 - `## Tasks`: checklist grouped by `### project` headings. Each day, copy forward every task that isn't `[x]` or `[-]`, keeping the text exactly the same.
-- Indented child lines under a task are notes about it. Reports may use them.
+- Indented child lines under a task are notes about it. Reports may use them. A child line on a `[x]` task becomes a **Win** in reports.
 - `## Notes`: free-form notes not tied to a task. Never used in reports.
 - `## Learning`: checklist of what you're reading or learning. Uses the same task states and copy-forward rule as Tasks, and child lines hold takeaways. Not counted as task-days and never used in reports, but you can query it (e.g. "what have I read about locking?", "how many learning days in October?").
 
