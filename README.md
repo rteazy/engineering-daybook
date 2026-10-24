@@ -31,26 +31,15 @@ Fixed the race with a Redis lock on session id.
 
 ## Daybook format
 
-- Filename: `YYYY-MM-DD.md`, matching the `date` in the frontmatter.
-- Frontmatter: `date: YYYY-MM-DD`.
-- `## Tasks`: checklist grouped by `### project` headings. Each day, copy forward every task marked "yes" in [Task states](#task-states), keeping the text exactly the same.
-  - Indented child lines under a task are notes about it.
-- `## Learning`: checklist for personal learning. Uses the same task states and copy-forward rule as Tasks.
-- `## Notes`: free-form notes not tied to a task.
+See [skills/daybook/SKILL.md](skills/daybook/SKILL.md) for the full format and task states.
 
-## Task states
+## Install
 
-| Box   | Meaning         | Copied forward |
-|-------|-----------------|----------------|
-| `[ ]` | open            | yes            |
-| `[/]` | worked on today | yes            |
-| `[!]` | blocked         | yes            |
-| `[x]` | done            | no             |
-| `[-]` | dropped         | no             |
+The skill in `skills/daybook/` uses the open Agent Skills format, so it works in any agent that supports skills. Copy `skills/daybook/` into your agent's skills folder, for example `~/.claude/skills/` for Claude Code.
 
 ## User journeys
 
-Because the format is consistent, an LLM can read your daybooks and answer questions about your work. Keep your daybooks in one folder, point an LLM (e.g. Claude Code) at it along with this README, and try prompts like these:
+Because the format is consistent, an LLM can read your daybooks and answer questions about your work. Keep your daybooks in one folder, open your agent there with the skill installed, and try prompts like these:
 
 - **Starting your day:** "Create today's daybook, copying forward tasks from yesterday."
 - **Preparing for a review:** "My manager asked what my main accomplishments were last quarter. Look at the work I completed in Q4 and summarize my main accomplishments."
@@ -59,4 +48,4 @@ Because the format is consistent, an LLM can read your daybooks and answer quest
 
 ## Examples
 
-See [example-daybook.md](example-daybook.md) for a full daybook.
+See [example-daybook.md](skills/daybook/references/example-daybook.md) for a full daybook.

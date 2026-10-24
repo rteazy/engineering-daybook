@@ -3,6 +3,16 @@
 All notable changes to the daybook format are documented here.
 This project uses [Semantic Versioning](https://semver.org).
 
+## [1.1.0] - 2026-10-24
+
+### Added
+- `daybook` skill in the open Agent Skills format.
+
+### Changed
+- `[/]` tasks reset to `[ ]` when copied forward.
+- Format spec moved from the README to `skills/daybook/SKILL.md`.
+- Example daybook moved to `skills/daybook/references/`.
+
 ## [1.0.0] - 2026-10-24
 
 ### Added
